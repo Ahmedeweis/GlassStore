@@ -4,7 +4,28 @@ const routes = [
     path: '/',
     name: 'home',
     component: () => import('../views/HomeView.vue')
+  },
+  {
+    path: '/product/:id',
+    name: 'product-details',
+    component: () => import('../views/ProductDetailsView.vue')
+  },
+  {
+    path: '/checkout/buyer-info',
+    name: 'buyer-info',
+    component: () => import('../views/BuyerInfoView.vue')
+  },
+  {
+    path: '/checkout/payment-methods',
+    name: 'payment-methods',
+    component: () => import('../views/PaymentMethodsView.vue')
+  },
+  {
+    path: '/checkout/confirmation',
+    name: 'confirmation',
+    component: () => import('../views/ConfirmationView.vue')
   }
+
 ]
 const router = createRouter({
   history: createWebHistory(),

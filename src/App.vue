@@ -14,12 +14,13 @@
     </div>
     <!-- </div> -->
     <ScrollToTop />
+    <ShoppingCart />
 </template>
 
 <script setup>
 import { ref } from 'vue'
-// import Footer from './components/Footer.vue'
 import ScrollToTop from './components/ScrollToTop.vue'
+import ShoppingCart from './components/ShoppingCart.vue'
 const isLoading = ref(false)
 
 
